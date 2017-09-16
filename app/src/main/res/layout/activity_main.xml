@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aelaf.listtorecyclerview.MainActivity">
+
+
+    <Button
+        android:id="@+id/buttListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:onClick="doListView"
+
+        android:layout_alignLeft="@+id/buttListViewCustomAdapter"
+        android:layout_alignRight="@+id/buttListViewCustomAdapter"
+        android:text="ListView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttListViewCustomAdapter"
+        android:text="ListViewWithCustomAdapter"
+        android:layout_centerHorizontal="true"
+        android:onClick="doListViewCustomAdapter"
+        android:layout_below="@+id/buttListView"
+        />
+    <Button
+        android:id="@+id/butRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttListViewCustomAdapter"
+        android:layout_alignRight="@+id/buttListViewCustomAdapter"
+        android:layout_below="@+id/buttListViewCustomAdapter"
+
+        android:onClick="doRecyclerView"
+        android:text="RecyclerView" />
+</RelativeLayout>
